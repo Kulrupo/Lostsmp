@@ -17,9 +17,10 @@ body {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1260px;
-    height: 50px;
+    width: 80%;
+    max-width: 1400px;
+    min-width: 1200px;
+    height: 60px;
     background: #22222291;
     display: flex;
     align-items: center;
@@ -32,7 +33,7 @@ body {
 
 /* Logo responsiva */
 .logo img {
-    height: 40px;
+    height: 50px;
     filter: invert(100);
 }
 
@@ -45,9 +46,9 @@ body {
 }
 
 .nav li {
-    margin-right: 15px;
-    width: 120px;
-    height: 37px;
+    margin-right: 20px;
+    width: 140px;
+    height: 40px;
     transform: skew(-20deg);
     background: #070404;
     transition: 0.3s ease;
@@ -59,7 +60,7 @@ body {
 .nav a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .nav li:hover {
@@ -73,22 +74,22 @@ body {
 
 /* Espaçamento para o conteúdo */
 .boasvindas {
-    margin-top: 150px;
+    margin-top: 160px;
     padding: 20px;
-    min-height: 80vh;
-    font-size: 30px;
+    min-height: 85vh;
+    font-size: 32px;
 }
 
 .button {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: #0a0a0a88;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .button:hover {
@@ -97,29 +98,30 @@ body {
 
 .conteudo {
     background-color: #222222;
-    height: 70px;
+    height: 80px;
 }
 
-/* Media Queries para dispositivos menores */
-@media (max-width: 768px) {
+/* Media Queries para resolução entre 1366x768 e 1920x1080 */
+@media (max-width: 1600px) {
     .header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
+        width: 85%;
     }
-
-    .nav {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
     .nav li {
-        width: 100%;
-        margin: 5px 0;
+        width: 130px;
     }
+    .boasvindas {
+        font-size: 30px;
+    }
+}
 
-    .login {
-        margin-left: 0;
+@media (max-width: 1366px) {
+    .header {
+        width: 90%;
+    }
+    .nav li {
+        width: 120px;
+    }
+    .boasvindas {
+        font-size: 28px;
     }
 }
