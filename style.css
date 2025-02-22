@@ -1,3 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('RuaChuvosa.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+}
+
 /* Cabeçalho fixo responsivo */
 .header {
     position: fixed;
@@ -17,14 +30,18 @@
     z-index: 1000;
 }
 
+/* Logo responsiva */
+.logo img {
+    height: 40px;
+    filter: invert(100);
+}
+
 /* Navegação responsiva */
 .nav {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-grow: 1; /* Make the nav take up the available space */
-    justify-content: flex-start; /* Align the first three buttons to the left */
 }
 
 .nav li {
@@ -51,5 +68,59 @@
 
 /* Ajusta o login */
 .login {
-    margin-left: auto; /* Keep the login button on the right */
+    margin-left: auto;
 }
+
+/* Espaçamento para o conteúdo */
+.boasvindas {
+    margin-top: 150px;
+    padding: 20px;
+    min-height: 80vh;
+    font-size: 30px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0a0a0a88;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: #36363694;
+}
+
+.conteudo {
+    background-color: #222222;
+    height: 70px;
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .login {
+        margin-left: 0;
+    }
+}
+
