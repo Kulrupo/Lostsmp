@@ -30,18 +30,14 @@ body {
     z-index: 1000;
 }
 
-/* Logo responsiva */
-.logo img {
-    height: 40px;
-    filter: invert(100);
-}
-
 /* Navegação responsiva */
 .nav {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-grow: 1; /* Make the nav take up the available space */
+    justify-content: flex-start; /* Align the first three buttons to the left */
 }
 
 .nav li {
@@ -68,7 +64,7 @@ body {
 
 /* Ajusta o login */
 .login {
-    margin-left: auto;
+    margin-left: auto; /* Keep the login button on the right */
 }
 
 /* Espaçamento para o conteúdo */
