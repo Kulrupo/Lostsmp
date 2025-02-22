@@ -10,7 +10,10 @@ body {
     -ms-overflow-style: none;
     overflow-y: scroll;
 }
-
+.logo img {
+    height: 40px;
+    filter: invert(100);
+}
 /* Cabeçalho fixo responsivo */
 .header {
     position: fixed;
