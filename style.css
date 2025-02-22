@@ -48,11 +48,11 @@ body {
 .nav .left-buttons {
     display: flex;
     justify-content: flex-start; /* Align left buttons to the left */
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .nav li {
-    margin-right: 20px;
+    margin-right: 15px;
     width: 100px;
     height: 37px;
     transform: skew(-20deg);
