@@ -1,26 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('RuaChuvosa.gif') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow-y: scroll;
-}
-
 /* Cabeçalho fixo responsivo */
 .header {
     position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
-    max-width: 1400px;
-    min-width: 1200px;
-    height: 60px;
+    width: 90%;
+    max-width: 1260px;
+    height: 50px;
     background: #22222291;
     display: flex;
     align-items: center;
@@ -31,24 +17,20 @@ body {
     z-index: 1000;
 }
 
-/* Logo responsiva */
-.logo img {
-    height: 50px;
-    filter: invert(100);
-}
-
 /* Navegação responsiva */
 .nav {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-grow: 1; /* Make the nav take up the available space */
+    justify-content: flex-start; /* Align the first three buttons to the left */
 }
 
 .nav li {
-    margin-right: 20px;
-    width: 140px;
-    height: 40px;
+    margin-right: 15px;
+    width: 120px;
+    height: 37px;
     transform: skew(-20deg);
     background: #070404;
     transition: 0.3s ease;
@@ -60,7 +42,7 @@ body {
 .nav a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .nav li:hover {
@@ -69,59 +51,5 @@ body {
 
 /* Ajusta o login */
 .login {
-    margin-left: auto;
-}
-
-/* Espaçamento para o conteúdo */
-.boasvindas {
-    margin-top: 160px;
-    padding: 20px;
-    min-height: 85vh;
-    font-size: 32px;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #0a0a0a88;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.button:hover {
-    background: #36363694;
-}
-
-.conteudo {
-    background-color: #222222;
-    height: 80px;
-}
-
-/* Media Queries para resolução entre 1366x768 e 1920x1080 */
-@media (max-width: 1600px) {
-    .header {
-        width: 85%;
-    }
-    .nav li {
-        width: 130px;
-    }
-    .boasvindas {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 1366px) {
-    .header {
-        width: 90%;
-    }
-    .nav li {
-        width: 120px;
-    }
-    .boasvindas {
-        font-size: 28px;
-    }
+    margin-left: auto; /* Keep the login button on the right */
 }
