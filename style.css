@@ -10,10 +10,7 @@ body {
     -ms-overflow-style: none;
     overflow-y: scroll;
 }
-.logo img {
-    height: 40px;
-    filter: invert(100);
-}
+
 /* Cabeçalho fixo responsivo */
 .header {
     position: fixed;
@@ -26,11 +23,16 @@ body {
     background: #22222291;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+}
+
+/* Logo responsiva */
+.logo img {
+    height: 40px;
+    filter: invert(100);
 }
 
 /* Navegação responsiva */
@@ -39,13 +41,19 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-grow: 1; /* Make the nav take up the available space */
-    justify-content: flex-start; /* Align the first three buttons to the left */
+    width: 100%;
+    justify-content: space-between; /* Spread out buttons */
+}
+
+.nav .left-buttons {
+    display: flex;
+    justify-content: flex-start; /* Align left buttons to the left */
+    margin-left: 20px;
 }
 
 .nav li {
-    margin-right: 15px;
-    width: 120px;
+    margin-right: 20px;
+    width: 100px;
     height: 37px;
     transform: skew(-20deg);
     background: #070404;
@@ -67,13 +75,13 @@ body {
 
 /* Ajusta o login */
 .login {
-    margin-left: auto; /* Keep the login button on the right */
+    margin-left: 600px; /* Push the login button to the right */
 }
 
 /* Espaçamento para o conteúdo */
 .boasvindas {
     margin-top: 150px;
-    padding: 20px;
+    padding: 30px;
     min-height: 80vh;
     font-size: 30px;
 }
@@ -122,4 +130,5 @@ body {
         margin-left: 0;
     }
 }
+
 
