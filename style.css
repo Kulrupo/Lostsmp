@@ -537,3 +537,51 @@ body {
     border-radius: 6px;
     font-size: 0.85rem;
 }
+
+.footer {
+    background-color: #0e0e0e;
+    color: #ccc;
+    padding: 30px 20px 10px;
+    font-family: 'Minecraft', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    color: #ccc;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #a259ff;
+  }
+  
+  .footer-divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #777;
+    line-height: 1.4;
+  }
+  
