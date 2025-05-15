@@ -12,6 +12,10 @@
 
 <body>
   <header>
+    <button class="menu-toggle" aria-label="Abrir menu">
+        &#9776;
+      </button>
+      
     <div class="progress-bar" id="progressBar"></div>
     <div class="nav-container">
       <div class="logo"><span class="roxo">Lost</span>Smp</div>
@@ -277,5 +281,13 @@
   emailjs.init('POncV0zszbjovDO9m')
 </script>
 <script src="formulario-email.js"></script>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+  
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

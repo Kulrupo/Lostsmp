@@ -23,7 +23,7 @@ body {
   }
   
   .progress-bar {
-    height: 5px;
+    height: 2px;
     background: linear-gradient(to right, #8e2de2, #fff);
     width: 0%;
     transition: width 0.2s;
@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 1px 20px;
   }
   
   .logo {
@@ -583,5 +583,125 @@ body {
     font-size: 0.75rem;
     color: #777;
     line-height: 1.4;
+  }
+  
+
+  /* RESPONSIVO PARA MOBILE */
+@media (max-width: 768px) {
+
+    body {
+      font-size: 14px;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .hero {
+      padding-top: 120px;
+      background-size: cover;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .subtitulo {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  
+    .botoes {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .cards-container,
+    .gameplay-content,
+    .gameplay-content.reverse {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gameplay-text {
+      text-align: center;
+      flex: 1 1 100%;
+      padding: 0 10px;
+    }
+  
+    .gameplay-image img {
+      max-width: 90%;
+    }
+  
+    .locais-grid,
+    .eventos-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .evento-card {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .form-box {
+      padding: 15px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-socials {
+      justify-content: center;
+    }
+  }
+  
+  /* Estilo do botão hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Menu mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #000;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
   }
   
