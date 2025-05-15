@@ -96,7 +96,8 @@ body {
   .hero {
     background-color: #0a0a0a;
     background-image: url(crash.gif);
-    background-size: 90em;
+    background-size: 1080px, 720px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -311,7 +312,7 @@ body {
   
   .gameplay-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border: 2px solid #a259ff;
     border-radius: 10px;
     box-shadow: 0 0 10px #a259ff60;
