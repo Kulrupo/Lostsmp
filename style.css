@@ -34,9 +34,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-  }
+  } 
   
   .logo {
+    margin-top: 10px;
     font-size: 26px;
     font-weight: bold;
   }
