@@ -94,10 +94,9 @@ body {
   
   .hero {
     background-color: #0a0a0a;
-    background-image: url('palace.gif');
-    background-size: cover;
+    background-image: url('crash.gif');
+    background-size:  100%;
     background-repeat: no-repeat;
-    background-position: center;
     text-align: center;
     padding-top: 150px;
     padding-bottom: 100px;
@@ -125,7 +124,7 @@ body {
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto 40px;
-    color: #505050;
+    color: #000000;
   }
   
   .botoes {
@@ -227,5 +226,173 @@ body {
   .info-card p {
     color: #ccc;
     font-size: 0.95rem;
+  }
+  
+  .gameplay {
+    background-color: #0f0f0f;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .gameplay .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Minecraft', sans-serif;
+    color: #a259ff;
+  }
+  
+  .gameplay .section-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 60px;
+  }
+  
+  .gameplay-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .gameplay-content.reverse {
+    flex-direction: row;
+    display: flex; /* necessário para aplicar corretamente */
+  }
+  
+  
+  .gameplay-text {
+    flex: 1 1 400px;
+    text-align: left;
+    color: #ddd;
+  }
+  
+  .gameplay-text h3 {
+    color: #a259ff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-family: 'Minecraft', sans-serif;
+  }
+
+
+  .gameplay-text h2 {
+    color: #a259ff;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-family: 'Minecraft', sans-serif;
+  }
+  
+  .gameplay-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .gameplay-text li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .gameplay-text .icon {
+    margin-right: 10px;
+    font-size: 1.4rem;
+  }
+  
+  .gameplay-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gameplay-image img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #a259ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a259ff60;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Animação de flutuação */
+  @keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .locais {
+    padding: 100px 20px;
+    background-color: #121212;
+    text-align: center;
+  }
+  
+  .locais .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Minecraft', sans-serif;
+  }
+  
+  .locais .section-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 60px;
+  }
+  
+  .locais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .local-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .local-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .local-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    z-index: 2;
+  }
+  
+  .local-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #a259ff;
+    font-family: 'Minecraft', sans-serif;
+  }
+  
+  .local-info p {
+    margin-top: 5px;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  .local-card:hover img {
+    transform: scale(1.05);
+    box-shadow: 1px 0px 15px #a259ff;
   }
   
