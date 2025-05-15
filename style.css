@@ -703,5 +703,10 @@ body {
     nav ul.active {
       display: flex;
     }
+    .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 26px;
+        animation: 2s ease 0s infinite normal none running pulse;
+    }
   }
   
