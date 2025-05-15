@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="Logo.png" type="image/png">
 </head>
+
 <body>
   <header>
     <div class="progress-bar" id="progressBar"></div>
@@ -17,7 +18,7 @@
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#gameplay">Gameplay</a></li>
           <li><a href="#locais">Locais</a></li>
-          <li><a href="#inscricao">Inscrição</a></li>
+          <li><a href="#inscrição">Inscrição</a></li>
         </ul>
       </nav>
     </div>
@@ -155,8 +156,105 @@
         </div>
       </section>
       </section>
-  <section id="inscricao">Inscrição</section>
+      <section class="eventos">
+        <h2 class="section-title">Eventos Mensais</h2>
+        <p class="section-subtitle">
+          Participe de eventos especiais que revelam mais sobre a história da ilha e oferecem recompensas exclusivas.
+        </p>
+      
+        <div class="eventos-grid">
+            <div class="evento-card">
+                <div class="evento-icon">🗺️</div>
+                <div class="evento-texto">
+                  <h3>Caça ao Tesouro</h3>
+                  <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
+                </div>
+              </div>
+      
+              <div class="evento-card">
+                <div class="evento-icon">🗺️</div>
+                <div class="evento-texto">
+                  <h3>Caça ao Tesouro</h3>
+                  <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
+                </div>
+              </div>
+      
+              <div class="evento-card">
+                <div class="evento-icon">🗺️</div>
+                <div class="evento-texto">
+                  <h3>Caça ao Tesouro</h3>
+                  <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
+                </div>
+              </div>
+      
+              <div class="evento-card">
+                <div class="evento-icon">🗺️</div>
+                <div class="evento-texto">
+                  <h3>Caça ao Tesouro</h3>
+                  <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
+                </div>
+              </div>
+        </div>
+      </section>
+      
+      <section class="inscricao-section" id="inscrição">
+        <h2 class="inscricao-titulo"><span class="roxo">Lost</span>SMP</h2>
+        <p class="inscricao-subtitulo">
+          Preencha o formulário abaixo para se inscrever e começar sua aventura na ilha perdida.
+        </p>
+      
+        <div class="form-box">
+          <form id="form">
+            <div class="form-group">
+              <label for="nickname">Nome de usuário (Nickname)</label>
+              <input type="text" id="nickname" name="nickname" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="discord">ID do Discord</label>
+              <input type="text" id="discord" name="discord" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Seu Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+      
+            <div class="form-group">
+              <label>Interesses em Minecraft</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="interesses" value="Construção" /> Construção</label>
+                <label><input type="checkbox" name="interesses" value="Redstone" /> Redstone</label>
+                <label><input type="checkbox" name="interesses" value="Mods" /> Mods</label>
+                <label><input type="checkbox" name="interesses" value="PvP" /> PvP</label>
+                <label><input type="checkbox" name="interesses" value="Exploração" /> Exploração</label>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="tempo">Há quanto tempo joga Minecraft?</label>
+              <input type="text" id="tempo" name="tempo" />
+            </div>
+      
+            <div class="form-group">
+              <label for="motivo">Por que você quer entrar no LostSMP?</label>
+              <textarea id="motivo" name="motivo" rows="4"></textarea>
+            </div>
+      
+            <input type="submit" id="button" class="btn-submit" value="Enviar inscrição" />
+          </form>
+        </div>
+      </section>
+      
+      
 
   <script src="script.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('POncV0zszbjovDO9m')
+</script>
+<script src="formulario-email.js"></script>
 </body>
 </html>
