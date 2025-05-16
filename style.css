@@ -370,26 +370,26 @@ body {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
   }
   
-  .local-info {
+.local-info {
     position: absolute;
-    bottom: 0;
+    bottom: -34px;
     width: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     color: white;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     text-align: left;
     z-index: 2;
-  }
+}
   
-  .local-info h3 {
-    margin: 0;
+.local-info h3 {
+    margin: 0px;
     margin-top: 10px;
     font-size: 1.2rem;
     color: #7c1ef8;
     font-family: 'Minecraft', sans-serif;
-  }
-  
+    margin-bottom: -19px;
+}
   .local-info p {
     margin-top: 5px;
     font-size: 0.95rem;
