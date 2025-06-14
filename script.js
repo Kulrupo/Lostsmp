@@ -34,5 +34,5 @@ form.addEventListener('submit', (e) => {
   form.reset();
 
   // redirecionar para outra página após envio
-  window.location.href = 'redirecionando.html'; // troque pelo caminho desejado
+  window.location.href = 'Redirecionando.html'; // troque pelo caminho desejado
 });
