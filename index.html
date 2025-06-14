@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="Logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -45,24 +50,24 @@
   <section id="sobre"><section class="sobre">
     <h2 class="section-title">Bem-vindo ao <span class="roxo">LostSMP</span></h2>
     <p class="section-subtitle">
-      Um servidor único de Minecraft inspirado em DayZ, onde sobrevivência, exploração e história se encontram em uma ilha misteriosa.
+      Um servidor único de Minecraft inspirado em DayZ e Rust, onde sobrevivência, exploração e história se encontram em uma ilha misteriosa.
     </p>
   
     <div class="cards-container">
       <div class="info-card">
-        <div class="icon">🌍</div>
+        <div class="icon"></div>
         <h3>Mundo Aberto</h3>
         <p>Explore ruínas, biomas e segredos espalhados por toda a ilha.</p>
       </div>
   
       <div class="info-card">
-        <div class="icon">⚔️</div>
+        <div class="icon"></div>
         <h3>Facções</h3>
         <p>Alie-se ou lute por território com outros jogadores em disputas intensas.</p>
       </div>
   
       <div class="info-card">
-        <div class="icon">📜</div>
+        <div class="icon"></div>
         <h3>História Viva</h3>
         <p>Descubra eventos e narrativas que evoluem com o tempo e suas ações.</p>
       </div>
@@ -72,16 +77,16 @@
   <section id="gameplay"><section class="gameplay">
     <h2 class="section-title">Gameplay Imersiva</h2>
     <p class="section-subtitle">
-      Inspirado no DayZ, nosso servidor oferece uma experiência única de sobrevivência e exploração.
+      Inspirado em DayZ e Rust, nosso servidor oferece uma experiência única de sobrevivência e exploração.
     </p>
   
     <div class="gameplay-content">
       <div class="gameplay-text">
         <h3 class="roxo">Loot & Exploração</h3>
         <ul>
-          <li><span class="icon">🏙️</span> Explore ruínas de cidades abandonadas, castelos antigos e bunkers secretos em busca de recursos valiosos.</li>
-          <li><span class="icon">🛡️</span> Encontre equipamentos raros, armas e itens especiais que podem dar vantagem na sobrevivência.</li>
-          <li><span class="icon">🗺️</span> Cada área tem seu próprio nível de dificuldade e recompensas, incentivando a exploração completa da ilha.</li>
+          <li><span class="icon"></span> Explore ruínas de cidades abandonadas, castelos antigos e bunkers secretos em busca de recursos valiosos.</li>
+          <li><span class="icon"></span> Encontre equipamentos raros, armas e itens especiais que podem dar vantagem na sobrevivência.</li>
+          <li><span class="icon"></span> Cada área tem seu próprio nível de dificuldade e recompensas, incentivando a exploração completa da ilha.</li>
         </ul>
       </div>
       <div class="gameplay-image floating">
@@ -96,11 +101,11 @@
         <div class="gameplay-text">
           <h3 class="roxo">Facções & PvP</h3>
           <ul>
-            <li><span class="icon">🥫</span> Crie sua própria facção ou junte-se a uma existente para aumentar suas chances de sobrevivência.</li>
-            <li><span class="icon">👥</span> Construa bases fortificadas para proteger seus recursos e membros de ataques inimigos.
+            <li><span class="icon"></span> Crie sua própria facção ou junte-se a uma existente para aumentar suas chances de sobrevivência.</li>
+            <li><span class="icon"></span> Construa bases fortificadas para proteger seus recursos e membros de ataques inimigos.
 
             </li>
-            <li><span class="icon">📦</span> Participe de intensas batalhas PvP por território e recursos, com mecânicas de combate balanceadas.</li>
+            <li><span class="icon"></span> Participe de intensas batalhas PvP por território e recursos, com mecânicas de combate balanceadas.</li>
           </ul>
         </div>
       </div>
@@ -170,7 +175,7 @@
       
         <div class="eventos-grid">
             <div class="evento-card">
-                <div class="evento-icon">🗺️</div>
+                <div class="evento-icon"></div>
                 <div class="evento-texto">
                   <h3>Caça ao Tesouro</h3>
                   <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
@@ -178,7 +183,7 @@
               </div>
       
               <div class="evento-card">
-                <div class="evento-icon">🗺️</div>
+                <div class="evento-icon"></div>
                 <div class="evento-texto">
                   <h3>Caça ao Tesouro</h3>
                   <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
@@ -186,7 +191,7 @@
               </div>
       
               <div class="evento-card">
-                <div class="evento-icon">🗺️</div>
+                <div class="evento-icon"></div>
                 <div class="evento-texto">
                   <h3>Caça ao Tesouro</h3>
                   <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
@@ -194,7 +199,7 @@
               </div>
       
               <div class="evento-card">
-                <div class="evento-icon">🗺️</div>
+                <div class="evento-icon"></div>
                 <div class="evento-texto">
                   <h3>Caça ao Tesouro</h3>
                   <p>Siga pistas para encontrar artefatos antigos e descobrir segredos da ilha.</p>
@@ -203,55 +208,63 @@
         </div>
       </section>
       
-      <section class="inscricao-section" id="inscrição">
-        <h2 class="inscricao-titulo"><span class="roxo">Lost</span>SMP</h2>
-        <p class="inscricao-subtitulo">
-          Preencha o formulário abaixo para se inscrever e começar sua aventura na ilha perdida.
-        </p>
-      
-        <div class="form-box">
-          <form id="form">
-            <div class="form-group">
-              <label for="nickname">Nome de usuário (Nickname)</label>
-              <input type="text" id="nickname" name="nickname" required />
-            </div>
-      
-            <div class="form-group">
-              <label for="discord">ID do Discord</label>
-              <input type="text" id="discord" name="discord" required />
-            </div>
-      
-            <div class="form-group">
-              <label for="email">Seu Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-      
-            <div class="form-group">
-              <label>Interesses em Minecraft</label>
-              <div class="checkbox-group">
-                <label><input type="checkbox" name="interesses" value="Construção" /> Construção</label>
-                <label><input type="checkbox" name="interesses" value="Redstone" /> Redstone</label>
-                <label><input type="checkbox" name="interesses" value="Mods" /> Mods</label>
-                <label><input type="checkbox" name="interesses" value="PvP" /> PvP</label>
-                <label><input type="checkbox" name="interesses" value="Exploração" /> Exploração</label>
-              </div>
-            </div>
-      
-            <div class="form-group">
-              <label for="tempo">Há quanto tempo joga Minecraft?</label>
-              <input type="text" id="tempo" name="tempo" />
-            </div>
-      
-            <div class="form-group">
-              <label for="motivo">Por que você quer entrar no LostSMP?</label>
-              <textarea id="motivo" name="motivo" rows="4"></textarea>
-            </div>
-      <div class="g-recaptcha" data-sitekey="6LePUkArAAAAAMX-iW9ypeqxsriDK-tS3n74LBhB" data-theme="dark"></div>
+ <section class="inscricao-section" id="inscricao">
+    <h2 class="inscricao-titulo"><span class="roxo">Lost</span>SMP</h2>
+    <p class="inscricao-subtitulo">
+      Preencha o formulário abaixo para se inscrever e começar sua aventura na ilha perdida.
+    </p>
 
-            <input type="submit" id="button" class="btn-submit" value="Enviar inscrição" />
-          </form>
+    <div class="form-box">
+      <form id="form">
+        <div class="form-group">
+          <label for="nickname">Nome de usuário (Nickname)</label>
+          <input type="text" id="nickname" name="nickname" required />
         </div>
-      </section>
+
+        <div class="form-group">
+          <label for="discord">ID do Discord</label>
+          <input type="text" id="discord" name="discord" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Seu Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label>Interesses em Minecraft</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interesses" value="Construção" /> Construção</label>
+            <label><input type="checkbox" name="interesses" value="Redstone" /> Redstone</label>
+            <label><input type="checkbox" name="interesses" value="Mods" /> Mods</label>
+            <label><input type="checkbox" name="interesses" value="PvP" /> PvP</label>
+            <label><input type="checkbox" name="interesses" value="Exploração" /> Exploração</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="tempo">Há quanto tempo joga Minecraft?</label>
+          <input type="text" id="tempo" name="tempo" />
+        </div>
+
+        <div class="form-group">
+          <label for="motivo">Por que você quer entrar no LostSMP?</label>
+          <textarea id="motivo" name="motivo" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="lgpd" name="lgpd" required />
+          <label for="lgpd">
+            Eu concordo com os <a href="Termos.html" style="color: #a259ff;">termos de uso e política de privacidade</a> de acordo com a LGPD.
+          </label>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LePUkArAAAAAMX-iW9ypeqxsriDK-tS3n74LBhB" data-theme="dark"></div>
+
+        <input type="submit" id="button" class="btn-submit" value="Enviar inscrição" />
+      </form>
+    </div>
+  </section>
       <footer class="footer">
         <div class="footer-content">
           <div class="footer-logo">

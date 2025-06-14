@@ -1,9 +1,98 @@
 /* style.css */
 @font-face {
-    font-family: 'Minecraft';
-    src: url('Minecraft.ttf') format('truetype');
-    font-display: swap;
-  }
+  font-family: 'Minecraft';
+  src: url('Minecraft.ttf') format('truetype');
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Minecraft', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+
+.info-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.info-card:nth-child(1) .icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: "\f57d"; /* fas fa-globe */
+  font-weight: 900;
+}
+
+.info-card:nth-child(2) .icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: "\f132"; /* fas fa-shield-alt */
+  font-weight: 900;
+}
+
+.info-card:nth-child(3) .icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: "\f70e"; /* fas fa-scroll */
+  font-weight: 900;
+}
+
+/* Gameplay icons */
+.gameplay-text li .icon::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+.gameplay-text li:nth-child(1) .icon::before {
+  content: "\f64f"; /* fa-city */
+}
+
+.gameplay-text li:nth-child(2) .icon::before {
+  content: "\f6e3"; /* fa-helmet-safety */
+}
+
+.gameplay-text li:nth-child(3) .icon::before {
+  content: "\f279"; /* fa-map */
+}
+
+.gameplay-text:nth-of-type(2) li:nth-child(1) .icon::before {
+  content: "\f49e"; /* fa-box-open */
+}
+
+.gameplay-text:nth-of-type(2) li:nth-child(2) .icon::before {
+  content: "\f0c0"; /* fa-users */
+}
+
+.gameplay-text:nth-of-type(2) li:nth-child(3) .icon::before {
+  content: "\f49e"; /* fa-box */
+}
+
+/* Evento card icon */
+.evento-card .evento-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: "\f279"; /* fa-map */
+  font-weight: 900;
+}
+
+/* Checkbox LGPD label link hover */
+.form-group label a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollbar visual refinado opcional */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a259ff;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
 
 
 
@@ -95,7 +184,7 @@ body {
   
   .hero {
     background-color: #0a0a0a;
-    background-image: url(crash.gif);
+    background-image: url(Gif\ \(1\).gif);
     background-size: 1080px, 720px;
     background-position: center;
     background-size: cover;
@@ -262,7 +351,7 @@ body {
   
   .gameplay-content.reverse {
     flex-direction: row;
-    display: flex; /* necessário para aplicar corretamente */
+    display: flex;
   }
   
   
@@ -312,7 +401,7 @@ body {
   
   .gameplay-image img {
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     margin-top: 30px;
     border: 2px solid #a259ff;
     border-radius: 10px;
