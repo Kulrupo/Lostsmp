@@ -18,7 +18,7 @@ const btn = document.getElementById('button');
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Enviar inscrição';
-        alert('Inscrição enviada com sucesso!');
+        window.location.href = 'Redirecionando.html';
         this.reset();
         grecaptcha.reset(); // reseta o captcha para o próximo envio
       }, (err) => {
